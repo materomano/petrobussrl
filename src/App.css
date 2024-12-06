@@ -1,0 +1,9 @@
+.main {
+  padding-top: 80px; /* Ajusta según la altura real de tu header */
+  background-color: rgb(255, 255, 255);
+}
+
+/* Aseguramos que las secciones no se tapen al hacer scroll con los anclajes */
+#nosotros, #servicios, #flota {
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu header */
+}

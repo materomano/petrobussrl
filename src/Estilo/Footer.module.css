@@ -1,0 +1,137 @@
+.futer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 450px;
+  align-items: center; /* Centra todo horizontalmente */
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 31px;
+  color: rgb(0, 0, 0);
+}
+
+.futer div.contact {
+  width: 60%;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra horizontalmente el contenido */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.futer h2 {
+  font-size: 30px; /* Tamaño del texto del h2 */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 10px; /* Asegura un espacio entre el h2 y las secciones */
+}
+
+.futer section {
+  width: 100%; /* Mantiene el ancho completo */
+  display: flex; /* Alínea los elementos en fila */
+  justify-content: center; /* Centra horizontalmente los íconos y texto */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.futer i {
+  font-size: 35px; /* Tamaño del ícono */
+  color: #000000; /* Color del ícono */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.futer h1 {
+  font-size: 20px; /* Tamaño del texto h1 */
+  margin: 0;
+  text-align: center; /* Centra el texto */
+  color: rgb(0, 0, 0);
+}
+
+.futer img {
+  width: 40%;
+}
+
+hr.line {
+  width: 90%; /* Línea más larga que ocupa el 90% del ancho del footer */
+  border: none;
+  border-top: 1px solid #ccc; /* Línea sutil */
+  margin: 20px auto; /* Espaciado vertical y centrado */
+}
+
+.reserved {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #555;
+  padding-top: 10px; /* Espacio para separar del contenido superior */
+}
+
+@media screen and (max-width: 768px) {
+  .futer {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+  .futer div.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    gap: 15px; /* Espacio entre los elementos */
+    
+  }
+
+  .futer h2 {
+    font-size: 30px; /* Tamaño del texto del h2 */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 0 10px; /* Sin márgenes laterales */
+  }
+  .futer img {
+    display: none;
+  }
+  
+  .futer section {
+    width: 100%; /* Mantiene el ancho completo */
+    display: flex; /* Alínea los elementos en fila */
+    justify-content: center; /* Centra horizontalmente los íconos y texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre el ícono y el texto */
+  }
+
+  .futer i {
+    font-size: 35px; /* Tamaño del ícono */
+    color: #000000; /* Color del ícono */
+    text-align: center;
+  }
+
+  .futer h1 {
+    font-size: 20px; /* Tamaño del texto h1 */
+    margin: 0; /* Sin márgenes */
+    text-align: center; /* Centra el texto */
+    color: rgb(0, 0, 0);
+  }
+
+  hr.line {
+    width: 100%; /* Línea ocupa todo el ancho del footer */
+    border: none;
+    border-top: 1px solid #ccc; /* Línea sutil */
+    margin: 20px 0; /* Espaciado vertical únicamente */
+  }
+
+  .reserved {
+    text-align: center;
+    margin: 0; /* Sin márgenes superiores */
+    font-size: 20px;
+    color: #555;
+    padding-top: 10px; /* Espacio para separar del contenido superior */
+  }
+}

@@ -1,0 +1,98 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Necesario para posicionar elementos superpuestos */
+  width: 50%; /* Ajusta el tamaño del contenedor */
+  height: 50%; /* Ajusta la altura del contenedor */
+  margin: auto;
+  background-color: #000; /* Fondo negro */
+  border: 1px solid #ccc; /* Opcional: Ayuda a visualizar los bordes */
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.8); /* Reduce el brillo de la imagen */
+  transition: opacity 1s ease-in-out; /* Suaviza el cambio entre imágenes */
+}
+
+.overlay {
+  position: absolute; /* Superpone el texto sobre la imagen */
+  top: 250px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Asegura que el texto esté sobre las imágenes */
+  pointer-events: none; /* Evita interferir con clics */
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 2rem; /* Tamaño del texto */
+  text-align: center;
+  font-family: "Poppins", Sans-serif;   
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para posicionar elementos superpuestos */
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 100%; /* Ajusta la altura del contenedor */
+    margin: auto;
+    background-color: #000; /* Fondo negro */
+    border: 1px solid #ccc; /* Opcional: Ayuda a visualizar los bordes */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 0; /* Asegura que el overlay pueda estar por encima */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.8); /* Reduce el brillo de la imagen */
+    transition: opacity 1s ease-in-out; /* Suaviza el cambio entre imágenes */
+  }
+  
+  .overlay {
+    position: absolute; /* Superpone el texto sobre la imagen */
+   
+    margin-top: 20px;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Asegura que el texto esté sobre las imágenes */
+    pointer-events: none; /* Evita interferir con clics */
+   
+    transform: translateY(-50%); /* Ajusta el desplazamiento */
+  }
+  
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 15px; /* Tamaño del texto */
+    text-align: center;
+    font-family: "Poppins", Sans-serif;   
+  
+    border-radius: 5px; /* Bordes redondeados */
+ 
+   
+  }
+
+
+
+}
