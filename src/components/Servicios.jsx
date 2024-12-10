@@ -19,7 +19,7 @@ export const Servicios = () => {
       </div>
       <section>
       <h4>2. Taller Mecánico de Última Tecnología:</h4>
-        <img src="/public/images/herramientas.jpg" alt="" />
+        <img src="/images/herramientas.jpg" alt="" />
         <p>
           Ofrecemos servicios de revisión y reparación de todo tipo de
           vehículos, utilizando la última tecnología disponible en el mercado.

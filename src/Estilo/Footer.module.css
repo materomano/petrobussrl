@@ -63,7 +63,7 @@ hr.line {
 .reserved {
   text-align: center;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
   color: #555;
   padding-top: 10px; /* Espacio para separar del contenido superior */
 }
@@ -130,7 +130,7 @@ hr.line {
   .reserved {
     text-align: center;
     margin: 0; /* Sin márgenes superiores */
-    font-size: 20px;
+    font-size: 15px;
     color: #555;
     padding-top: 10px; /* Espacio para separar del contenido superior */
   }
