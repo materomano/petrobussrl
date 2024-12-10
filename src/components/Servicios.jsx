@@ -31,26 +31,26 @@ export const Servicios = () => {
       
         <div>
           <h3>Lavados completos</h3>
-          <img src="/public/images/lavado-auto.jpg" alt="" />
+          <img src="/images/lavado-auto.jpg" alt="" />
         </div>
         <div>
           <h3>Pintura</h3>
-          <img src="/public/images/pintura.jpg" alt="" />
+          <img src="/images/pintura.jpg" alt="" />
         </div>
         <div>
           <h3>Mecanica General</h3>
-          <img src="/public/images/mantenimiento.jpeg" alt="" />
+          <img src="/images/mantenimiento.jpeg" alt="" />
         </div>
         <div>
           <h3>Mantenimiento eléctrico </h3>
-          <img src="/public/images/mantenimiento-electrico.jpg" alt="" />
+          <img src="/images/mantenimiento-electrico.jpg" alt="" />
         </div>
       </div>
 
       <section>
         <h4>3. Reparto de Comida Gastronómica:</h4>
         <div>
-          <img src="/public/images/reparto-de-comida.jpg" alt="" />
+          <img src="/images/reparto-de-comida.jpg" alt="" />
         </div>
         <p>
           Proporcionamos servicios de reparto de comida para las empresas

@@ -13,27 +13,27 @@ const Flota = () => {
     transit: {
       name: "Ford Transit Minibus",
       passengers: "17 pasajeros",
-      images: ["/public/images/int12.jpg", "/public/images/atras.jpg", "/public/images/adentro.jpg"],
+      images: ["/images/int12.jpg", "/images/atras.jpg", "/images/adentro.jpg"],
     },
     mercedez: {
       name: "Mercedes-Benz Sprinter Combi",
       passengers: "15 pasajeros",
-      images: ["/public/images/int10.jpg"],
+      images: ["/images/int10.jpg"],
     },
     furgon: {
       name: "Ford Transit Furgón",
       passengers: null,
-      images: ["/public/images/furgon.jpg"],
+      images: ["/images/furgon.jpg"],
     },
     ducato: {
       name: "Fiat Ducato Furgón",
       passengers: null,
-      images: ["/public/images/int1.jpg"],
+      images: ["/images/int1.jpg"],
     },
     expert: {
       name:"Peugeot Expert Furgón ",
       passengers: null,
-      images: ["/public/images/expert.jpg"],
+      images: ["/images/expert.jpg"],
     },
   };
 
