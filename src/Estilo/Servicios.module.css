@@ -42,7 +42,7 @@
 @media screen and (max-width: 768px) {
 
     .servicio {
-        text-align: center;
+        text-align: start;
         font-size: 22px;
         
         width: 90%;
@@ -59,7 +59,7 @@
         font-size: 25px;
     }
     .servicio h4 {
-        text-align: center;
+        text-align: start;
         font-size: 20px;
     }
     
