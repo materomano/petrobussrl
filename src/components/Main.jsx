@@ -3,7 +3,7 @@ import styles from "../Estilo/Main.module.css";
 
 const Main = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ["/images/int 12.jpg", "/images/expert.jpg", "/images/int 10.jpg", "/images/int 5.jpg"]; // Rutas de las imágenes
+  const images = ["/images/int12.jpg", "/images/expert.jpg", "/images/int10.jpg", "/images/int5.jpg"]; 
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -8,17 +8,17 @@ const Flota = () => {
     sprinter: {
       name: "Mercedes-Benz Sprinter",
       passengers: "19 pasajeros",
-      images: ["/public/images/int-5.jpg"],
+      images: ["/public/images/int5.jpg"],
     },
     transit: {
       name: "Ford Transit Minibus",
       passengers: "17 pasajeros",
-      images: ["/public/images/int-12.jpg", "/public/images/atras.jpg", "/public/images/adentro.jpg"],
+      images: ["/public/images/int12.jpg", "/public/images/atras.jpg", "/public/images/adentro.jpg"],
     },
     mercedez: {
       name: "Mercedes-Benz Sprinter Combi",
       passengers: "15 pasajeros",
-      images: ["/public/images/int-10.jpg"],
+      images: ["/public/images/int10.jpg"],
     },
     furgon: {
       name: "Ford Transit Furgón",
@@ -28,7 +28,7 @@ const Flota = () => {
     ducato: {
       name: "Fiat Ducato Furgón",
       passengers: null,
-      images: ["/public/images/int-1.jpg"],
+      images: ["/public/images/int1.jpg"],
     },
     expert: {
       name:"Peugeot Expert Furgón ",
