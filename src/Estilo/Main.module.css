@@ -4,7 +4,7 @@
   align-items: center;
   position: relative; /* Necesario para posicionar elementos superpuestos */
   width: 50%; /* Ajusta el tamaño del contenedor */
-  height: 50%; /* Ajusta la altura del contenedor */
+  height: 614.88px; /* Ajusta la altura del contenedor */
   margin: auto;
   
   border: 1px solid #ccc; /* Opcional: Ayuda a visualizar los bordes */
@@ -22,10 +22,11 @@
     border-radius: inherit; /* Aplica el mismo borde redondeado que el contenedor */
 }
 .trompa {
- 
-  filter: grayscale(50%); /* Aplicar cualquier efecto que desees */
-  width: 500px;
-  
+  width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+  height: 614.88px; /* Ajusta la altura al contenedor */
+  object-fit: cover; /* Asegura que la imagen se adapte correctamente */
+  filter: grayscale(50%); /* Efecto adicional */
+  border-radius: inherit; /* Aplica el mismo borde redondeado que el contenedor */
 }
 
 .overlay {
@@ -73,7 +74,7 @@
   
   .image {
     width: 100%;
-    height: auto;
+    height: 310px;
     filter: brightness(0.8); /* Reduce el brillo de la imagen */
     transition: opacity 1s ease-in-out; /* Suaviza el cambio entre imágenes */
   }
@@ -81,7 +82,7 @@
     border: 5px; /* Ejemplo: borde rojo para destacar las imágenes de trompa */
     filter: grayscale(50%); /* Aplicar cualquier efecto que desees */
     width: 100%;
-    height: 450px;
+    height: 310px;
     
   }
   
@@ -132,7 +133,7 @@
   
   .image {
     width: 100%;
-    height: auto;
+    height: 743.25px;
     filter: brightness(0.8); /* Reduce el brillo de la imagen */
     transition: opacity 1s ease-in-out; /* Suaviza el cambio entre imágenes */
   }
@@ -140,7 +141,7 @@
     border: 5px; /* Ejemplo: borde rojo para destacar las imágenes de trompa */
     filter: grayscale(50%); /* Aplicar cualquier efecto que desees */
     width: 58%;
-    height: auto;
+    height: 743.25px;
     
   }
   

@@ -12,7 +12,7 @@ const Footer = () => {
         </a>
         {/* Sección de contacto */}
         <div className={styles.contact}>
-          <h2>Contáctanos</h2>
+          <h2>Contactanos</h2>
           <section>
             <i className="fa-regular fa-envelope"></i>
             <h1>Petrobussrl@hotmail.com</h1>
