@@ -22,7 +22,7 @@
     border-radius: inherit; /* Aplica el mismo borde redondeado que el contenedor */
 }
 .trompa {
-  border: 5px solid red; /* Ejemplo: borde rojo para destacar las imágenes de trompa */
+ 
   filter: grayscale(50%); /* Aplicar cualquier efecto que desees */
   width: 500px;
   
