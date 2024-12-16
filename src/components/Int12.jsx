@@ -3,9 +3,9 @@ import React from 'react'
 const Int12 = () => {
   return (
     <div>
-        <img src="/public/images/atras.jpg" alt="" />
-        <img src="/public/images/int 12.jpg" alt="" />
-        <img src="/public/images/adentro.jpg" alt="" />
+        <img src="/images/atras.jpg" alt="" />
+        <img src="/images/int 12.jpg" alt="" />
+        <img src="/images/adentro.jpg" alt="" />
 
 
 

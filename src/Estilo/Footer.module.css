@@ -135,3 +135,70 @@ hr.line {
     padding-top: 10px; /* Espacio para separar del contenido superior */
   }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  .futer {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+  .futer div.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    gap: 15px; /* Espacio entre los elementos */
+    
+  }
+
+  .futer h2 {
+    font-size: 30px; /* Tamaño del texto del h2 */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 0 10px; /* Sin márgenes laterales */
+  }
+  .futer img {
+    display: none;
+  }
+  
+  .futer section {
+    width: 100%; /* Mantiene el ancho completo */
+    display: flex; /* Alínea los elementos en fila */
+    justify-content: center; /* Centra horizontalmente los íconos y texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre el ícono y el texto */
+  }
+
+  .futer i {
+    font-size: 35px; /* Tamaño del ícono */
+    color: #000000; /* Color del ícono */
+    text-align: center;
+  }
+
+  .futer h1 {
+    font-size: 20px; /* Tamaño del texto h1 */
+    margin: 0; /* Sin márgenes */
+    text-align: center; /* Centra el texto */
+    color: rgb(0, 0, 0);
+  }
+
+  hr.line {
+    width: 100%; /* Línea ocupa todo el ancho del footer */
+    border: none;
+    border-top: 1px solid #ccc; /* Línea sutil */
+    margin: 20px 0; /* Espaciado vertical únicamente */
+  }
+
+  .reserved {
+    text-align: center;
+    margin: 0; /* Sin márgenes superiores */
+    font-size: 15px;
+    color: #555;
+    padding-top: 10px; /* Espacio para separar del contenido superior */
+  }
+}

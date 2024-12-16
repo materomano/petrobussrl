@@ -23,7 +23,7 @@ const Flota = () => {
     furgon: {
       name: "Ford Transit Furgón",
       passengers: null,
-      images: ["/images/furgon.jpg"],
+      images: ["/images/furgon.jpg", "/images/trompa2.jpg"],
     },
     ducato: {
       name: "Fiat Ducato Furgón",
@@ -33,7 +33,7 @@ const Flota = () => {
     expert: {
       name:"Peugeot Expert Furgón ",
       passengers: null,
-      images: ["/images/expert.jpg"],
+      images: ["/images/expert.jpg", "/images/trompaexpert.jpg"],
     },
   };
 

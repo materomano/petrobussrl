@@ -3,7 +3,7 @@ import styles from "../Estilo/Main.module.css";
 
 const Main = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ["/images/int12.jpg", "/images/expert.jpg", "/images/int10.jpg", "/images/int5.jpg"]; 
+  const images = ["/images/int12.jpg", "/images/trompaexpert.jpg", "/images/int10.jpg", "/images/int5.jpg", "/images/trompa2.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -12,15 +12,24 @@ const Main = () => {
     return () => clearInterval(interval); // Limpia el intervalo al desmontar
   }, []);
 
+  // Verifica si la imagen actual es una "trompa"
+  const isTrompa = images[currentImage].includes("trompa");
+
   return (
     <div className={styles.main}>
       <div className={styles.overlay}>
-        <h1 className={styles.text}>Brindamos viajes seguros y mantenimientos de alta calidad.</h1>
+        {/* Solo muestra el texto si no es una imagen de "trompa" */}
+        {!isTrompa && (
+          <h1 className={styles.text}>Brindamos viajes seguros y mantenimientos de alta calidad.</h1>
+        )}
       </div>
-      <img src={images[currentImage]} alt="Imagen rotativa" className={styles.image} />
+      <img
+        src={images[currentImage]}
+        alt="Imagen rotativa"
+        className={`${styles.image} ${isTrompa ? styles.trompa : ""}`} // Agrega clase si es trompa
+      />
     </div>
   );
 };
 
 export default Main;
-

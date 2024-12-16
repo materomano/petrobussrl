@@ -92,3 +92,58 @@
 
 
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+    .servicio {
+        text-align: center;
+        font-size: 22px;
+        
+        width: 100%;
+        margin: auto;
+        background-color: rgb(214, 203, 203);
+        font-family: "Poppins", Sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 31px;
+    }
+    .servicio p{
+        text-align: start;
+    }
+    
+    .servicio h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .servicio h4 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .servicio img {
+        width: 50%; /* Ajustar dentro del contenedor */
+        text-align: center;
+        justify-items: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Alinear los elementos verticalmente */
+    }
+    
+    .tareas {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espaciado entre elementos */
+    justify-items: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Alinear los elementos verticalmente */
+    margin: auto;
+    }
+    
+    .tareas div {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .tareas img {
+        width: 100%; /* Ajusta el tamaño de las imágenes */
+       /* Tamaño máximo de las imágenes */
+        height: auto;
+        border-radius: 8px; /* Opcional: bordes redondeados */
+    }
+}
+

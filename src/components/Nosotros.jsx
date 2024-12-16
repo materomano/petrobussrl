@@ -47,6 +47,16 @@ const Nosotros = () => {
             clientes.
           </p>
         </div>
+        <div>
+          <h3>VISIÓN</h3>
+          <p>
+            Nuestra visión es consolidarnos como una empresa líder en el
+            sector del transporte y mantenimiento vehicular en toda la región,
+            innovando continuamente en nuestras prácticas y tecnologías para
+            ofrecer un servicio que supere las expectativas de nuestros
+            clientes.
+          </p>
+        </div>
         <section>
           <h3>
             En Petrobus, la confianza y la satisfacción de nuestros clientes son
