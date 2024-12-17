@@ -2,9 +2,9 @@ import React from "react";
 import { nosotros } from "../Estilo/Nostros.module.css";
 const Nosotros = () => {
   return (
-    <div className={nosotros}>
+    <section className={nosotros}>
       <div>
-        <h1>QUIENES SOMOS</h1>
+        <h1>NOSOTROS</h1>
         <section>
           <p>
             Somos Petrobus, una empresa familiar con más de 30 años de
@@ -53,7 +53,7 @@ const Nosotros = () => {
             Nuestra visión es consolidarnos como una empresa líder en el
             sector del transporte y mantenimiento vehicular en toda la región,
             innovando continuamente en nuestras prácticas y tecnologías para
-            ofrecer un servicio que supere las expectativas de nuestros
+            ofrecer un servicio de alta calidad que supere las expectativas de nuestros
             clientes.
           </p>
         </div>
@@ -64,7 +64,7 @@ const Nosotros = () => {
           </h3>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 

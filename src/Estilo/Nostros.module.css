@@ -1,5 +1,5 @@
 .nosotros{
-    background-color: rgb(173, 163, 163);
+    background-color: rgb(175, 175, 175);
     width: 100%;
     margin: auto;
     font-family: "Poppins", Sans-serif;
@@ -23,6 +23,9 @@
 }
 .nosotros h1{
     text-align: center;
+}
+.nosotros div div{
+    background-color: rgb(211, 203, 203) ;
 }
 
 @media screen and (max-width: 768px) {

@@ -7,13 +7,13 @@ export const Servicios = () => {
       <h2>SERVICIOS</h2>
       <p>
         En Petrobus, brindamos una amplia gama de servicios para satisfacer las
-        diversas necesidades de nuestros clientes. Nuestros principales
-        servicios incluyen:
+        diversas necesidades de nuestros clientes. <br /> NUESTROS PRINCIPALES
+        SERVICIOS INCLUYEN:
       </p>
       <div>
         <h4>1. Traslado de Pasajeros:</h4>
         <p>
-          Contamos con vehículos con capacidad para 15 y 19 pasajeros,
+          Contamos con vehículos con capacidad para 15, 17 y 19 pasajeros,
           garantizando un transporte cómodo y seguro.
         </p>
       </div>
@@ -48,12 +48,12 @@ export const Servicios = () => {
       </div>
 
       <section>
-        <h4>3. Reparto de Comida Gastronómica:</h4>
+        <h4>3. Distribucion de Comida Gastronómica:</h4>
         <div>
           <img src="/images/reparto-de-comida.jpg" alt="" />
         </div>
         <p>
-          Proporcionamos servicios de reparto de comida para las empresas
+          Proporcionamos servicios de distribucion de comida para las empresas
           contratistas de YPF, asegurando la entrega oportuna y de alta calidad.
         </p>
 

@@ -19,7 +19,7 @@ const Footer = () => {
           </section>
           <section>
             <i className="fa-solid fa-phone"></i>
-            <h1>2616231150---2613538519</h1>
+            <h1>2615505521---2613538519</h1>
           </section>
         </div>
       </div>

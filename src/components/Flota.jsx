@@ -8,7 +8,7 @@ const Flota = () => {
     sprinter: {
       name: "Mercedes-Benz Sprinter",
       passengers: "19 pasajeros",
-      images: ["/images/int5.jpg"],
+      images: ["/images/int5.jpg", "/images/trompa7.jpg", "/images/asientos7.jpg"],
     },
     transit: {
       name: "Ford Transit Minibus",
