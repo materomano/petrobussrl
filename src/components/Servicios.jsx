@@ -1,9 +1,10 @@
 import React from "react";
-import { servicio , tareas} from "../Estilo/Servicios.module.css";
+import styles from "../Estilo/Servicios.module.css";
 
 export const Servicios = () => {
   return (
-    <div className={servicio}>
+    <div className={`${styles.servicio} ${styles["scroll-reveal"]}`} style={{ "--delay": "0.2s" }}>
+
       <h2>SERVICIOS</h2>
       <p>
         En Petrobus, brindamos una amplia gama de servicios para satisfacer las
@@ -11,23 +12,33 @@ export const Servicios = () => {
         SERVICIOS INCLUYEN:
       </p>
       <div>
-        <h4>1. Traslado de Pasajeros:</h4>
+        <h4>. Traslado de Pasajeros:</h4>
         <p>
           Contamos con vehículos con capacidad para 15, 17 y 19 pasajeros,
           garantizando un transporte cómodo y seguro.
         </p>
       </div>
       <section>
-      <h4>2. Taller Mecánico de Última Tecnología:</h4>
+      <h4>. Distribucion de Comida Gastronómica:</h4>
+        <div>
+          <img src="/images/reparto-de-comida.jpg" alt="" />
+        </div>
+        <p>
+          Proporcionamos servicios de distribucion de comida para las empresas
+          contratistas de YPF, asegurando la entrega oportuna y de alta calidad.
+        </p>
+      </section>
+      <section>
+      <h4>. Taller Mecánico de Última Tecnología:</h4>
         <img src="/images/herramientas.jpg" alt="" />
         <p>
           Ofrecemos servicios de revisión y reparación de todo tipo de
           vehículos, utilizando la última tecnología disponible en el mercado.
         </p>
-        <h2>Nuestros servicios incluyen:</h2>
+        <h2>Dentro del taller ofrecemos servicos de :</h2>
       </section>
 
-      <div className={tareas}>
+      <div className={styles.tareas}>
       
         <div>
           <h3>Lavados completos</h3>
@@ -48,14 +59,7 @@ export const Servicios = () => {
       </div>
 
       <section>
-        <h4>3. Distribucion de Comida Gastronómica:</h4>
-        <div>
-          <img src="/images/reparto-de-comida.jpg" alt="" />
-        </div>
-        <p>
-          Proporcionamos servicios de distribucion de comida para las empresas
-          contratistas de YPF, asegurando la entrega oportuna y de alta calidad.
-        </p>
+       
 
         <h4>
           En Petrobus, nos comprometemos a ofrecer servicios de alta calidad y

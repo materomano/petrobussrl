@@ -39,6 +39,25 @@
     height: auto;
     border-radius: 8px; /* Opcional: bordes redondeados */
 }
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    animation: fadeIn 9.0s ease-out forwards;
+    animation-delay: var(--delay, 15s);
+}
+
 @media screen and (max-width: 768px) {
 
     .servicio {

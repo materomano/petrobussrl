@@ -11,6 +11,11 @@
   line-height: 31px;
   color: rgb(0, 0, 0);
 }
+.whatsappLink {
+  color: inherit; /* Hereda el color del texto circundante */
+  
+}
+
 
 .futer div.contact {
   width: 60%;

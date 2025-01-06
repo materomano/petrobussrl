@@ -15,11 +15,28 @@ const Footer = () => {
           <h2>Contactanos</h2>
           <section>
             <i className="fa-regular fa-envelope"></i>
-            <h1>Petrobussrl@hotmail.com</h1>
+            <a href="mailto:petrobussrl@hotmail.com">petrobussrl@hotmail.com</a>
           </section>
           <section>
-            <i className="fa-solid fa-phone"></i>
-            <h1>2615505521---2613538519</h1>
+          <i class="fa-brands fa-whatsapp"></i>
+            {/* Enlace WhatsApp */}
+            <a
+              href="https://wa.me/5492615505521"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappLink}
+            >
+              2615505521
+            </a>
+            <span> --- </span>
+            <a
+              href="https://wa.me/5492613538519"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappLink}
+            >
+              2613538519
+            </a>
           </section>
         </div>
       </div>

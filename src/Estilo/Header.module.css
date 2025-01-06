@@ -18,11 +18,14 @@
   margin-top: 0; /* Sin margen superior */
 }
 
-.estiloHeader h1 {
+.estiloHeader div a h1 {
   font-size: 40px;
-  color:blue;
+  color: blue;
   margin: 0; /* Asegura que no haya margen adicional */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: inline-block; /* Asegura que el <h1> se comporte como un bloque dentro del enlace */
 }
+
 
 .links{
  display: flex;

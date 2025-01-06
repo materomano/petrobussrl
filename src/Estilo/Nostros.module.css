@@ -1,4 +1,5 @@
-.nosotros{
+/* Estilo base */
+.nosotros {
     background-color: rgb(175, 175, 175);
     width: 100%;
     margin: auto;
@@ -6,30 +7,55 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 31px;
-   
-        
-   
-}
-.nosotros p{
-   
-    text-decoration: solid;
- font-size: 22px ;
- margin: 30px;
+    padding-top: 30px;
 }
 
-.nosotros h3{
+.nosotros p,
+.nosotros h1,
+.nosotros h3 {
+    margin-top: 30px;
+}
+
+.nosotros p {
+    text-decoration: solid;
+    font-size: 22px;
+    margin: 30px;
+}
+
+.nosotros h3 {
     font-size: 22px;
     text-align: center;
 }
-.nosotros h1{
+
+.nosotros h1 {
     text-align: center;
 }
-.nosotros div div{
-    background-color: rgb(211, 203, 203) ;
+
+.nosotros div div {
+    background-color: rgb(211, 203, 203);
 }
 
+/* Animación de aparición */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    animation: fadeIn 7.0s ease-out forwards;
+    animation-delay: var(--delay, 15s);
+}
+
+/* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-    .nosotros{
+    .nosotros {
         background-color: rgb(173, 163, 163);
         width: 100%;
         margin: auto;
@@ -37,26 +63,29 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 31px;
-       flex-direction: column;
-       text-align: start;
-            
-       
-    }
-    .nosotros p{
-       
-        text-decoration: solid;
-     font-size: 22px ;
-     margin: 30px;
+        flex-direction: column;
+        text-align: start;
+        padding-top: 30px; /* Mantener el padding-top consistente en pantallas pequeñas */
     }
     
-    .nosotros h3{
+    .nosotros p,
+    .nosotros h1,
+    .nosotros h3 {
+        margin-top: 30px; /* Aseguramos que todos tengan el mismo margin-top en pantallas pequeñas */
+    }
+
+    .nosotros p {
+        text-decoration: solid;
+        font-size: 22px;
+        margin: 30px;
+    }
+    
+    .nosotros h3 {
         font-size: 22px;
         text-align: center;
     }
-    .nosotros h1{
+    
+    .nosotros h1 {
         text-align: center;
     }
-    
-
-
 }

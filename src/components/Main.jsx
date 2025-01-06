@@ -1,33 +1,36 @@
 import React, { useState, useEffect } from "react";
 import styles from "../Estilo/Main.module.css";
 
+
 const Main = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ["/images/int12.jpg", "/images/trompaexpert.jpg", "/images/int10.jpg", "/images/int5.jpg", "/images/trompa2.jpg"];
+  const images = ["/images/int12.jpg", "/images/trompaexpert.jpeg", "/images/int10.jpg", "/images/int5.jpg", "/images/trompa5.jpeg"];
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length); // Alterna entre las imágenes
-    }, 3000); // Cambia cada 3 segundos
-    return () => clearInterval(interval); // Limpia el intervalo al desmontar
+    const interval = setInterval(nextImage, 4000);
+    return () => clearInterval(interval);
   }, []);
-
-  // Verifica si la imagen actual es una "trompa"
-  const isTrompa = images[currentImage].includes("trompa");
 
   return (
     <div className={styles.main}>
-      <div className={styles.overlay}>
-        {/* Solo muestra el texto si no es una imagen de "trompa" */}
-        {!isTrompa && (
-          <h1 className={styles.text}>Brindamos viajes seguros y mantenimientos de alta calidad.</h1>
-        )}
+      <div className={styles.carouselContainer}>
+        <button className={styles.arrow} onClick={prevImage}>
+         <img src="/images/flechaizquierda.png" alt="" />
+        </button>
+        <img src={images[currentImage]} alt="Imagen rotativa" className={styles.image} />
+        <button className={styles.arrow} onClick={nextImage}>
+         <img src="/images/flechaderecha.png" alt="" />
+        </button>
       </div>
-      <img
-        src={images[currentImage]}
-        alt="Imagen rotativa"
-        className={`${styles.image} ${isTrompa ? styles.trompa : ""}`} // Agrega clase si es trompa
-      />
+      <h3 className={styles.text}>Brindamos viajes seguros y mantenimientos de alta calidad.</h3> {/* Texto SIEMPRE visible */}
     </div>
   );
 };

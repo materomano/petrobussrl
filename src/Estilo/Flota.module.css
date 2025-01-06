@@ -11,7 +11,6 @@
 
 .flota h1 {
   text-align: center;
-
   color: white;
   padding: 10px;
   margin: 0;
@@ -31,22 +30,20 @@
 }
 
 .furgon img {
-  width: 80%;
+  width: 40%;
   height: auto;
   border-radius: 20px;
 }
-.section{
+.section {
   display: flex;
 }
-.section img{
+.section img {
   justify-content: space-around; /* Espacio entre imágenes */
   height: auto;
   border-radius: 20px;
   width: 32%;
   text-align: center; /* Centra el texto debajo de cada imagen */
 }
-
-
 
 .flota {
   text-align: center;
@@ -57,6 +54,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  width: 50%;
 }
 
 .furgon {
@@ -71,23 +69,109 @@
 .detalle {
   text-align: center;
 }
-
-.imagenesDetalle img {
-  max-width: 50%;
-  margin: 10px;
+.cardImage {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.volver {
-  background-color: #000000;
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+}
+
+.modalImage {
+  width: 70%;
+  border-radius: 8px;
+  max-height: 670px;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:white;
   color: white;
   border: none;
-  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
+
+.carouselButton:hover {
+  background-color:;
+}
+
+.carouselButton.left {
+  left: 10px;
+}
+
+.carouselButton.right {
+  right: 10px;
+}
+
+.carouselButton img {
+  width: 40px;
+}
+ 
+/* Nueva clase para el hover */
+.furgon {
+  width: 100%;
+  text-align: center;
+  position: relative; /* Necesario para posicionar el "Ver más" */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.furgon img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover; 
+}
+.furgon:hover {
+  transform: scale(1.0);
+}
+
+.furgon:hover .overlay {
+  opacity: 1; /* Aparece el texto "Ver más" */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0; /* Inicia oculto */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Evita que el hover interfiera con la interacción */
+}
+
+.overlay span {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo para el texto */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .flota {
     display: flex;
-    flex-direction: column; /* Coloca el título arriba y el contenido abajo */
+    flex-direction: column;
     align-items: center;
     width: 100%;
     margin: auto;
@@ -95,90 +179,75 @@
     background-color: rgb(170, 175, 179);
     font-family: "Poppins", Sans-serif;
   }
-  
+
   .flota h1 {
     text-align: center;
-  
     color: white;
     padding: 10px;
     margin: 0;
   }
-  
+
   /* Contenedor para las imágenes */
   .imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Espacio entre imágenes */
+    justify-content: space-around;
     width: 90%;
     border-radius: 20px;
   }
-  
+
   .furgon {
     width: 100%;
-    text-align: center; /* Centra el texto debajo de cada imagen */
+    text-align: center;
+    position: relative; /* Necesario para .overlay */
+    cursor: pointer;
+    transition: transform 0.3s;
   }
-  
+
   .furgon img {
     width: 80%;
     height: auto;
     border-radius: 20px;
+    object-fit: cover;
   }
-  .section{
+
+  
+
+
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     display: flex;
-  }
-  .section img{
-    justify-content: space-around; /* Espacio entre imágenes */
-    height: auto;
-    border-radius: 20px;
-    width: 32%;
-    text-align: center; /* Centra el texto debajo de cada imagen */
-  }
-  
-  
-  
-  .flota {
-    text-align: center;
-  }
-  
-  .imagenes {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-  }
-  
-  .furgon {
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  
-  .furgon:hover {
-    transform: scale(1.05);
-  }
-  
-  .detalle {
-    text-align: center;
-  }
-  
-  .imagenesDetalle img {
-    max-width: 50%;
-    margin: 10px;
-  }
-  
-  .volver {
-    background-color: #000000;
+    align-items: center;
+    
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 1; /* Inicia oculto */
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    pointer-events: none; /* Permite que el hover funcione correctamente */
   }
+
+  .overlay span {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo para el texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
 }
+
 
 @media (min-width: 600px) and (max-width: 1024px) {
-
   .flota {
     display: flex;
-    flex-direction: column; /* Coloca el título arriba y el contenido abajo */
+    flex-direction: column;
     align-items: center;
     width: 100%;
     margin: auto;
@@ -186,83 +255,71 @@
     background-color: rgb(170, 175, 179);
     font-family: "Poppins", Sans-serif;
   }
-  
+
   .flota h1 {
     text-align: center;
-  
     color: white;
     padding: 10px;
     margin: 0;
   }
-  
+
   /* Contenedor para las imágenes */
   .imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Espacio entre imágenes */
+    justify-content: space-around;
     width: 90%;
     border-radius: 20px;
   }
-  
+
+ 
+
   .furgon {
     width: 100%;
-    text-align: center; /* Centra el texto debajo de cada imagen */
-  }
-  
-  .furgon img {
-    width: 80%;
-    height: auto;
-    border-radius: 20px;
-  }
-  .section{
-    display: flex;
-  }
-  .section img{
-    justify-content: space-around; /* Espacio entre imágenes */
-    height: auto;
-    border-radius: 20px;
-    width: 32%;
-    text-align: center; /* Centra el texto debajo de cada imagen */
-  }
-  
-  
-  
-  .flota {
     text-align: center;
-  }
-  
-  .imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .furgon {
+    position: relative; /* Necesario para posicionar el "Ver más" */
     cursor: pointer;
     transition: transform 0.3s;
   }
-  
+  .furgon images {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover; 
+  }
   .furgon:hover {
-    transform: scale(1.05);
+    transform: scale(1.0);
   }
   
-  .detalle {
-    text-align: center;
+  .furgon:hover .overlay {
+    opacity: 1; /* Aparece el texto "Ver más" */
   }
   
-  .imagenesDetalle img {
-    max-width: 50%;
-    margin: 10px;
-  }
-  
-  .volver {
-    background-color: #000000;
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 1; /* Inicia oculto */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Evita que el hover interfiera con la interacción */
   }
+  
+  .overlay span {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo para el texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
 
+  
 
+ 
+
+  
 }
+
+

@@ -1,9 +1,10 @@
 import React from "react";
-import { nosotros } from "../Estilo/Nostros.module.css";
+import styles from "../Estilo/Nostros.module.css";
+
 const Nosotros = () => {
   return (
-    <section className={nosotros}>
-      <div>
+    <section className={styles.nosotros}>
+      <div className={styles["scroll-reveal"]} style={{ "--delay": "0.2s" }}>
         <h1>NOSOTROS</h1>
         <section>
           <p>
@@ -39,9 +40,9 @@ const Nosotros = () => {
           </p>
         </div>
         <div>
-          <h3>MISION</h3>
+          <h3>MISIÓN</h3>
           <p>
-            Nuestra mision es proporcionar servicios de transporte y
+            Nuestra misión es proporcionar servicios de transporte y
             mantenimiento vehicular confiables y de alta calidad, respaldados
             por décadas de experiencia y un profundo compromiso con nuestros
             clientes.

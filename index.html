@@ -8,45 +8,68 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PETROBUS SRL</title>
-    <meta name="description" content="Petrobus: Empresa de transporte confiables y eficientes. Descubre nuestros servicios y flota moderna.">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="HRZe7hdI_kEl5ySFNf7rFDbXjNneQbF3RqsxM0pdGwQ" />
-  <link rel="canonical" href="https://petrobuscom.vercel.app/">
+    <meta
+      name="description"
+      content="Petrobus: Empresa de transporte confiables y eficientes. Descubre nuestros servicios y flota moderna."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="HRZe7hdI_kEl5ySFNf7rFDbXjNneQbF3RqsxM0pdGwQ" />
+    <link rel="canonical" href="https://petrobuscom.vercel.app/" />
     <style>
-      .gmail-icon {
-        position: fixed;
-        bottom: 50px; /* Ajusta la distancia desde el fondo */
-        right: 40px; /* Ajusta la distancia desde la derecha */
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px; /* Agranda el fondo inicialmente */
-        height: 50px; /* Agranda el fondo inicialmente */
-        border-radius: 50%;
-        background-color: #000000; /* Color de fondo */
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000; /* Asegura que quede encima de otros elementos */
-        animation: bounce 2s infinite; /* Aplica la animación */
-      }
+ .whatsapp-icon {
+  position: fixed;
+  bottom: 50px; /* Ajusta la distancia desde el fondo */
+  right: 40px; /* Ajusta la distancia desde la derecha */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Tamaño del fondo */
+  height: 60px; /* Tamaño del fondo */
+  border-radius: 50%;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: #fff; /* Color del ícono */
+  font-size: 40px; /* Tamaño del ícono */
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que quede encima de otros elementos */
+  animation: bounce 2s infinite; /* Aplica la animación */
+}
 
-      .gmail-icon img {
-        max-width: 50px; /* Asegura que la imagen permanezca proporcional */
-        max-height: 30px; /* Limita el tamaño dentro del fondo */
-        pointer-events: none; /* Evita que la interacción afecte la imagen */
-      }
+.whatsapp-icon i {
+  pointer-events: none; /* Evita que la interacción afecte la imagen */
+}
 
-      .gmail-icon:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Ajuste para dispositivos Tablet */
+@media screen and (max-width: 1024px) {
+  .whatsapp-icon {
+    bottom: 500px; /* Más cerca del borde inferior */
+    right: 30px; /* Más cerca del borde derecho */
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
+}
+
+/* Ajuste para dispositivos Móviles */
+@media screen and (max-width: 768px) {
+  .whatsapp-icon {
+    bottom: 100px; /* Más cerca del borde inferior */
+    right: 20px; /* Más cerca del borde derecho */
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
 
       @keyframes bounce {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateY(0);
         }
         50% {
@@ -57,14 +80,17 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- Ícono de Gmail -->
+    <!-- Ícono de WhatsApp -->
     <a
-      href="mailto:petrobussrl@hotmail.com"
-      class="gmail-icon"
-      title="Enviar un correo"
-    >
-      <img src="/public/images/hotmail.png" alt="" />
-    </a>
+    
+    href="https://wa.me/5492615505521?text=¡Hola!,%20me%20gstaria%20saber%20sobre%20sus%20servicios."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-icon"
+    title="Enviar un mensaje por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
