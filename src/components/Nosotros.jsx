@@ -5,7 +5,7 @@ const Nosotros = () => {
   return (
     <section className={styles.nosotros}>
       <div className={styles["scroll-reveal"]} style={{ "--delay": "0.2s" }}>
-        <h1>NOSOTROS</h1>
+        <h1>QUIÉNES SOMOS</h1>
         <section>
           <p>
             Somos Petrobus, una empresa familiar con más de 30 años de

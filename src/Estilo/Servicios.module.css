@@ -9,6 +9,7 @@
     font-size: 22px;
     font-weight: 300;
     line-height: 31px;
+    margin-top: 50px;
 }
 
 .servicio h2 {
@@ -71,6 +72,7 @@
         font-size: 22px;
         font-weight: 300;
         line-height: 31px;
+        margin-top: 30px;
     }
     
     .servicio h2 {
@@ -123,6 +125,7 @@
         font-size: 22px;
         font-weight: 300;
         line-height: 31px;
+        margin-top: 50px;
     }
     .servicio p{
         text-align: start;

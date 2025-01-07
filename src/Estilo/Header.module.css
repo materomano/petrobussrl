@@ -86,7 +86,7 @@
     margin: 0; /* Asegura que no haya margen adicional */
   }
   .estiloHeader button{
-    font-size: 30px;
+    font-size: 20px;
     color: blue;
     padding: 30px;
   }

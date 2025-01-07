@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: rgb(170, 175, 179);
   font-family: "Poppins", Sans-serif;
 }
@@ -195,6 +195,46 @@
     width: 90%;
     border-radius: 20px;
   }
+  .modalImage {
+    width: 70%;
+    border-radius: 8px;
+    max-height: 670px;
+  }
+  
+  .carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:white;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .carouselButton:hover {
+    background-color:;
+  }
+  
+  .carouselButton.left {
+    left: 10px;
+  }
+  
+  .carouselButton.right {
+    right: 10px;
+  }
+  
+  .carouselButton img {
+    width: 40px;
+  }
+   
 
   .furgon {
     width: 100%;
@@ -251,7 +291,7 @@
     align-items: center;
     width: 100%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: rgb(170, 175, 179);
     font-family: "Poppins", Sans-serif;
   }

@@ -23,11 +23,11 @@ const Main = () => {
     <div className={styles.main}>
       <div className={styles.carouselContainer}>
         <button className={styles.arrow} onClick={prevImage}>
-         <img src="/images/flechaizquierda.png" alt="" />
+         <img src="/images/flechaizquierda.jpg" alt="" />
         </button>
         <img src={images[currentImage]} alt="Imagen rotativa" className={styles.image} />
         <button className={styles.arrow} onClick={nextImage}>
-         <img src="/images/flechaderecha.png" alt="" />
+         <img src="/images/flechaderecha.jpg" alt="" />
         </button>
       </div>
       <h3 className={styles.text}>Brindamos viajes seguros y mantenimientos de alta calidad.</h3> {/* Texto SIEMPRE visible */}

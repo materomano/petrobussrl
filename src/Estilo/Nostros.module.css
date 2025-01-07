@@ -1,4 +1,5 @@
 /* Estilo base */
+
 .nosotros {
     background-color: rgb(175, 175, 175);
     width: 100%;
@@ -8,6 +9,7 @@
     font-weight: 300;
     line-height: 31px;
     padding-top: 30px;
+    margin-top: 50px;
 }
 
 .nosotros p,
@@ -65,7 +67,8 @@
         line-height: 31px;
         flex-direction: column;
         text-align: start;
-        padding-top: 30px; /* Mantener el padding-top consistente en pantallas pequeñas */
+        padding-top: 30px; 
+        margin-top: 30px;/* Mantener el padding-top consistente en pantallas pequeñas */
     }
     
     .nosotros p,
