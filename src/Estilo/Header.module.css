@@ -81,14 +81,16 @@
   }
   
   .estiloHeader h1 {
-    font-size: 25px;
+    width: 100%;
+    font-size: ;
     color:blue;
-    margin: 0; /* Asegura que no haya margen adicional */
+    margin: 0; 
+    padding: 0;/* Asegura que no haya margen adicional */
   }
   .estiloHeader button{
-    font-size: 20px;
+    font-size: 25px;
     color: blue;
-    padding: 30px;
+    padding: 15px;
   }
   .links{
    display: flex;
