@@ -102,7 +102,7 @@ const Flota = () => {
               className={styles.modalImage}
             />
             <button onClick={handleNextImage} className={`${styles.carouselButton} ${styles.right}`}>
-              <img src="/images/logo.jpg" alt="" />
+              <img src="/images/flechaderecha.jpg" alt="" />
             </button>
           </div>
         )}

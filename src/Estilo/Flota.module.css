@@ -267,17 +267,17 @@
     top: 50%;
     transform: translateY(-50%);
     background-color:white;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
     font-size: 1.5rem;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 100;
   }
   
   .carouselButton:hover {
