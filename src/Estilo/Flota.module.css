@@ -110,7 +110,7 @@
 }
 
 .carouselButton:hover {
-  background-color:;
+  background-color:white;
 }
 
 .carouselButton.left {
@@ -271,29 +271,30 @@
     border: none;
     border-radius: 50%;
     font-size: 1.5rem;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
+    
   }
   
   .carouselButton:hover {
-    background-color:;
+    background-color:white;
   }
   
   .carouselButton.left {
-    left: 10px;
+    left: 20px;
   }
   
   .carouselButton.right {
-    right: 10px;
+    right: 20px;
   }
   
   .carouselButton img {
-    width: 40px;
+    width: 60px;
   }
    
   /* Nueva clase para el hover */
