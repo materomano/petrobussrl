@@ -280,6 +280,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1100;
+    border-radius: 50%;
 
   }
   
@@ -288,11 +289,11 @@
   }
   
   .carouselButton.left {
-    left: 20px;
+    left: 10px; /* Menos separación en móviles */
   }
-  
+
   .carouselButton.right {
-    right: 20px;
+    right: 10px; /* Menos separación en móviles */
   }
   .carouselButton i {
     font-size: 20px; /* Ajusta el tamaño del icono */
