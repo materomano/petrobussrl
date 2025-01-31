@@ -121,9 +121,11 @@
   right: 10px;
 }
 
-.carouselButton img {
-  width: 40px;
+.carouselButton i {
+  font-size: 20px; /* Ajusta el tamaño del icono */
+  color: black; /* Asegura que se vea bien */
 }
+
  
 /* Nueva clase para el hover */
 .furgon {
@@ -292,9 +294,9 @@
   .carouselButton.right {
     right: 20px;
   }
-  .carouselButton img {
-    width: 40px;
-    height: 40px;
+  .carouselButton i {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+    color: black; /* Asegura que se vea bien */
   }
   
   .modalContainer {

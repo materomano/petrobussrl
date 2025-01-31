@@ -94,7 +94,7 @@ const Flota = () => {
         {selectedImages.length > 0 && (
           <div className={styles.carousel}>
             <button onClick={handlePrevImage} className={`${styles.carouselButton} ${styles.left}`}>
-              <img src="/images/flechaizquierda.jpg" alt="" />
+              <i class="fa-solid fa-arrow-left"></i>
             </button>
             <img
               src={selectedImages[currentImageIndex]}
@@ -102,7 +102,8 @@ const Flota = () => {
               className={styles.modalImage}
             />
             <button onClick={handleNextImage} className={`${styles.carouselButton} ${styles.right}`}>
-              <img src="/images/flechaderecha.jpg" alt="" />
+             
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         )}
