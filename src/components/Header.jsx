@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div>
         
-        <a href="/"><h1>PETROBUS S.R.L</h1></a>
+        <a href="/"><h3>PETROBUS S.R.L</h3></a>
       </div>
 
       {/* Botón de menú hamburguesa */}

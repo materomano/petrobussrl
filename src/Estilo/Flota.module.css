@@ -289,11 +289,11 @@
   }
   
   .carouselButton.left {
-    left: 10px; /* Menos separación en móviles */
+    left: 8px; /* Menos separación en móviles */
   }
 
   .carouselButton.right {
-    right: 10px; /* Menos separación en móviles */
+    right: 8px; /* Menos separación en móviles */
   }
   .carouselButton i {
     font-size: 20px; /* Ajusta el tamaño del icono */
