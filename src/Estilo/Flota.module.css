@@ -114,11 +114,11 @@
 }
 
 .carouselButton.left {
-  left: 10px;
+  left: 50px;
 }
 
 .carouselButton.right {
-  right: 10px;
+  right: 50px;
 }
 
 .carouselButton i {
@@ -268,7 +268,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color:white;
+    background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
@@ -297,7 +297,7 @@
   }
   .carouselButton i {
     font-size: 20px; /* Ajusta el tamaño del icono */
-    color: black; /* Asegura que se vea bien */
+    color: rgb(255, 247, 247); /* Asegura que se vea bien */
   }
   
   .modalContainer {
