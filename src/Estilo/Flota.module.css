@@ -109,9 +109,6 @@
   z-index: 10;
 }
 
-.carouselButton:hover {
-  background-color:white;
-}
 
 .carouselButton.left {
   left: 50px;
@@ -284,9 +281,7 @@
 
   }
   
-  .carouselButton:hover {
-    background-color:white;
-  }
+
   
   .carouselButton.left {
     left: 8px; /* Menos separación en móviles */
