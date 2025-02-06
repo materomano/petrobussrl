@@ -237,7 +237,7 @@ color: black;
     right: 10px;
   }
 }
-@media (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1600px) {  
   .main {
     display: flex;
     flex-direction: column;
