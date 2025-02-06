@@ -24,8 +24,8 @@ export const Servicios = () => {
           <img src="/images/reparto-de-comida.jpg" alt="" />
         </div>
         <p>
-          Proporcionamos servicios de distribucion de comida para las empresas
-          contratistas de YPF, asegurando la entrega oportuna y de alta calidad.
+          Ofrecemos servicios de distribucion de comida gastronómica para las empresas petroleras
+          contratistas, asegurando la entrega oportuna y de alta calidad.
         </p>
       </section>
       <section>

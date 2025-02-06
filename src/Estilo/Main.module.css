@@ -237,3 +237,93 @@ color: black;
     right: 10px;
   }
 }
+@media (max-width: 1600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el contenedor principal */
+    margin: 10px auto; /* Margen superior y centrado horizontal */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden; /* Importante para que las imágenes no se desborden */
+  }
+  
+  .carouselContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .image {
+    
+      width: 100%;
+      height: 600px; /* Altura fija para todas las imágenes */
+      display: block;
+      object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+      filter: brightness(0.8);
+      transition: opacity 1s ease-in-out;
+      border-radius: inherit;
+    
+  }
+  
+  /* Elimina la clase .trompa, ya que no es necesaria y causa conflictos */
+  /* .trompa {
+    width: 100%;
+    height: 614.88px;
+    object-fit: cover;
+    filter: grayscale(50%);
+    border-radius: inherit;
+  } */
+  
+  /* Elimina el .overlay, ya que el texto ya no está superpuesto */
+  /* .overlay {
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: inherit;
+  } */
+  
+  .text {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: 20px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para mejor contraste */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family: "Poppins", Sans-serif;   
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+  }
+  .arrow img {
+    width: 40px;
+  }
+  .arrow:first-child {
+    left: 10px;
+  }
+  
+  .arrow:last-child {
+    right: 10px;
+  }
+
+}

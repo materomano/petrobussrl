@@ -10,13 +10,13 @@ const Nosotros = () => {
           <p>
             Somos Petrobus, una empresa familiar con más de 30 años de
             experiencia en el sector del transporte y mantenimiento vehicular.
-            Fundada en 1994, nuestra empresa se encuentra ubicada en la
-            prestigiosa Refinería Luján de Cuyo en Mendoza, Argentina.
+            Fundada en 1994, nuestra empresa se encuentra ubicada en el
+            Complejo Industrial de Luján de Cuyo en Mendoza, Argentina.
           </p>
         </section>
         <section>
           <p>
-            Desde nuestros inicios, hemos colaborado estrechamente con YPF,
+            Desde nuestros inicios, hemos colaborado estrechamente con Empresas Petroleras,
             brindando servicios de transporte a diversas empresas contratadas
             por esta importante petrolera. Nuestra flota de vehículos está
             equipada para cumplir con los más altos estándares de calidad y

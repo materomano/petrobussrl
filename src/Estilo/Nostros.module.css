@@ -92,3 +92,41 @@
         text-align: center;
     }
 }
+
+
+@media (max-width: 1600px) {
+    .nosotros {
+        background-color: rgb(173, 163, 163);
+        width: 100%;
+        margin: auto;
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 31px;
+        flex-direction: column;
+        text-align: start;
+        padding-top: 30px; 
+        margin-top: 30px;/* Mantener el padding-top consistente en pantallas pequeñas */
+    }
+    
+    .nosotros p,
+    .nosotros h1,
+    .nosotros h3 {
+        margin-top: 30px; /* Aseguramos que todos tengan el mismo margin-top en pantallas pequeñas */
+    }
+
+    .nosotros p {
+        text-decoration: solid;
+        font-size: 22px;
+        margin: 30px;
+    }
+    
+    .nosotros h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .nosotros h1 {
+        text-align: center;
+    }
+}

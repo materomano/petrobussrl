@@ -18,22 +18,23 @@ const Footer = () => {
             <a href="mailto:petrobussrl@hotmail.com">petrobussrl@hotmail.com</a>
           </section>
           <section>
-          <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-whatsapp"></i>
             {/* Enlace WhatsApp */}
             <a
-              href="https://wa.me/5492615505521"
+              href="https://wa.me/5492615505521?text=¡Hola!,%20vengo%20de%20la%20web%20me%20gustaria%20saber%20sobre%20sus%20servicios."
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.whatsappLink}
+              
+              title="Enviar un mensaje por WhatsApp"
             >
               2615505521
             </a>
-            <span> --- </span>
+            <span> - </span>
             <a
-              href="https://wa.me/5492613538519"
+              href="https://wa.me/5492613538519?text=¡Hola!,%20vengo%20de%20la%20web%20me%20gustaria%20saber%20sobre%20sus%20servicios."
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.whatsappLink}
+              title="Enviar un mensaje por WhatsApp"
             >
               2613538519
             </a>
@@ -43,13 +44,13 @@ const Footer = () => {
 
       <section>
         {/* Línea y derechos reservados */}
-      <hr className={styles.line} />
-      <div className={styles.reserved}>
-        <p>
-          © {new Date().getFullYear()} Petrobus SRL. Todos los derechos
-          reservados.
-        </p>
-      </div>
+        <hr className={styles.line} />
+        <div className={styles.reserved}>
+          <p>
+            © {new Date().getFullYear()} Petrobus SRL. Todos los derechos
+            reservados.
+          </p>
+        </div>
       </section>
     </>
   );
