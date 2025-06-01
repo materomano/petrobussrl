@@ -1,26 +1,27 @@
 .estiloHeader {
   display: flex;
   align-items: center; /* Alinea verticalmente los elementos dentro del header */
-  justify-content: space-between;
+justify-content:space-evenly;
   padding: 30px 0px;
- width: 100%;
-  height: 80px;
-  margin: auto;
+ width: 91%;
+  margin: 0 auto;
+
+
   background-color: rgb(255, 255, 255);
   font-family: "Poppins", Sans-serif;
   font-size: 22px;
-  font-weight: 300;
-  line-height: 31px;
+
   position: fixed; /* Hacer que el header esté fijo en la parte superior */
   top: 0; /* Posicionarlo en la parte superior */
-  left: 0; /* Alinearlo al lado izquierdo */
+
   z-index: 1000; /* Asegurar que el header esté por encima de otros elementos */
-  margin-top: 0; /* Sin margen superior */
+
 }
 
 .estiloHeader div a h3 {
   font-size: 25px;
   color: blue;
+  padding: 0;
   margin: 0; /* Asegura que no haya margen adicional */
   text-decoration: none; /* Elimina el subrayado del enlace */
   display: inline-block; /* Asegura que el <h1> se comporte como un bloque dentro del enlace */
@@ -44,7 +45,7 @@
 }
 
 .estiloHeader img {
-  width: 15%; /* Reducir el ancho de la imagen */
+  width: 18%; /* Reducir el ancho de la imagen */
   height: auto; /* Mantener las proporciones */
   object-fit: contain; /* Asegurar que no se deforme */
   margin: 0; /* Eliminar cualquier margen */
@@ -57,6 +58,25 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+
+.img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.estiloHeader img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  max-width: 150px; /* o el tamaño que quieras */
 }
 
 @media screen and (max-width: 768px) {
